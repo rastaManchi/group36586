@@ -14,4 +14,4 @@ def test_view(admin_client):
     # url = reverse('')
     response = admin_client.get('http://localhost:8000/home/')
     print(response.content)
-    assert response.status_code == 20
+    assert response.status_code == 200
